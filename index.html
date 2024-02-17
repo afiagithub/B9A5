@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,42 +16,63 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <!-- navigation bar section -->
-        <div class="navbar font-rale px-24 py-7">
+        <div class="navbar font-rale px-5 lg:px-24 py-7">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="font-medium text-lg px-4"><a>Home</a></li>
+                        <li class="font-medium text-lg px-4"><a>About</a></li>
+                        <li class="font-medium text-lg px-4"><a>Destination</a></li>
+                        <li class="font-medium text-lg px-4"><a>Search</a></li>
                     </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="font-medium text-lg px-4"><a>Home</a></li>
-                <li class="font-medium text-lg px-4"><a>About</a></li>
-                <li class="font-medium text-lg px-4"><a>Destination</a></li>
-                <li class="font-medium text-lg px-4"><a>Search</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-1">
+                    <li class="font-medium text-lg px-4"><a>Home</a></li>
+                    <li class="font-medium text-lg px-4"><a>About</a></li>
+                    <li class="font-medium text-lg px-4"><a>Destination</a></li>
+                    <li class="font-medium text-lg px-4"><a>Search</a></li>
+                </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn font-bold text-xl text-lime-green border-2 border-lime-green 
+                <a class="btn mr-3 lg:mr-5 font-bold text-base lg:text-xl text-lime-green border-2 border-lime-green 
               bg-light-lime hover:border-lime-green">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <div class="hero bg-[url(./images/banner.png)] w-[92%] lg:w-5/6 mx-auto rounded-3xl mb-10">
+            <!-- <div class="hero-overlay bg-opacity-60 rounded-3xl"></div> -->
+            <div class="hero-content text-center text-neutral-content">
+                <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-6xl font-rale font-bold pt-8 lg:pt-14 leading-snug">
+                        End-to-End Travel with <br> <span class="text-lime-green">P Paribahan</span>
+                    </h1>
+                    <p class="mb-8 lg:mb-12 w-[92%] lg:w-4/6 mx-auto lg:text-lg font-inter">
+                        Yes, you can run unit tests and view the results directly within the app. The
+                        integrated testing features allow for a streamlined .</p>
+                    <button class="btn btn-primary mb-12 lg:mb-28 font-rale font-bold lg:text-lg text-black 
+                    bg-lime-green border-2 border-lime-green hover:border-lime-green hover:bg-light-lime 
+                    hover:text-lime-green">Buy Tickets</button>
+                </div>
             </div>
         </div>
     </header>
@@ -60,19 +82,20 @@
     <footer></footer>
 
     <script src="scripts/script.js"></script>
-    
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'lime-green': '#1DD100',
-                'light-lime': '#1DD1001A',
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-green': '#1DD100',
+                        'light-lime': '#1DD1001A',
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
     </script>
 </body>
+
 </html>
