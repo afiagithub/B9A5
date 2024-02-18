@@ -19,10 +19,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="">
         <!-- navigation bar section -->
         <div class="navbar font-rale px-5 lg:px-20 py-7">
             <div class="navbar-start">
@@ -83,25 +86,27 @@
             <h1 class="font-rale font-bold text-4xl text-center pb-8 lg:pb-14">Best offers for you</h1>
 
             <div class="coupon-content flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between text-left">
-                <div class="new-coupon flex flex-row gap-4 lg:gap-36 justify-between items-center bg-[url(./images/coupon-1.svg)] 
-                bg-no-repeat bg-contain font-inter pl-8 lg:pl-12 pr-8 lg:pr-20 pt-8 lg:pt-12 pb-16">
+                <div class="new-coupon flex flex-row gap-4 lg:gap-8 justify-between items-center bg-[#FFBF0F] 
+                bg-no-repeat bg-contain font-inter px-5 lg:px-14 rounded-3xl">
                     <div class="offer-details">
                         <h3 class="text-4xl font-extrabold">15% OFF</h3>
                         <p class="text-lg font-bold my-2">on your next purchase</p>
                         <p class="text-lg font-light">use by January 2024</p>
                     </div>
+                    <img src="images/cupon-devider.png" alt="">
                     <div class="offer-code text-center">
                         <h3 class="text-3xl font-extrabold mb-2">NEW15</h3>
                         <p>Coupon Code</p>
                     </div>
                 </div>
-                <div class="new-coupon flex flex-row justify-between items-center gap-4 lg:gap-32 bg-[url(./images/coupon-2.png)] 
-                bg-no-repeat bg-contain font-inter px-6 lg:px-12 pt-8 lg:pt-12 pb-16">
+                <div class="new-coupon flex flex-row justify-between items-center gap-4 lg:gap-8 bg-[#F78C9C] 
+                bg-no-repeat bg-contain font-inter px-5 lg:px-14 rounded-3xl">
                     <div class="offer-details">
                         <h3 class="text-4xl font-extrabold">20% OFF</h3>
                         <p class="text-lg font-bold my-2">on your next purchase</p>
                         <p class="text-lg font-light">use by January 2024</p>
                     </div>
+                    <img src="images/cupon-devider.png" alt="">
                     <div class="offer-code text-center">
                         <h3 class="text-3xl font-extrabold mb-2">Couple 20</h3>
                         <p>Coupon Code</p>
@@ -349,13 +354,26 @@
                 </div>
             </div>
         </div>
+
+        <!-- modal section -->
+        <div class="success-modal flex flex-col justify-center items-center text-center lg:w-3/5
+         mx-auto mt-20 p-10 shadow-lg rounded-lg bg-[#27ae601a] hidden">
+            <img class="w-30" src="images/success.png" alt="">
+            <p class="font-roboto font-bold text-2xl text-[#27AE60] my-8 uppercase">Success</p>
+            <p class="font-roboto font-bold text-xl mb-3">Thank you for Booking Our Bus Seats. <br>
+                We are working hard to find the best service and deals for you.</p>
+            <p class="font-roboto font-thin text-xl">Shortly you will find a confirmation in your email.</p>
+            <button class="btn bg-[#27AE60] font-roboto font-semibold text-lg rounded-full text-white px-20 mt-5">
+                Continue</button>
+        </div>
     </main>
 
-    <footer class="bg-[#030712] text-neutral-content px-7 lg:px-24 py-10 lg:py-20 ">
+    <footer class="bg-[#030712] text-neutral-content px-7 lg:px-24 py-10 lg:py-20">
         <div class="footer-section flex flex-row justify-between pb-10">
             <div class="footer-heading">
                 <h1 class="font-rale font-extrabold text-3xl lg:text-4xl">P-Ticket</h1>
-                <p class="font-inter font-normal w-4/6 text-sm lg:text-base">P-Ticket is a digital platform to make your daily
+                <p class="font-inter font-normal w-4/6 text-sm lg:text-base">P-Ticket is a digital platform to make your
+                    daily
                     commuting better.</p>
             </div>
             <div class="footer-content">
