@@ -72,9 +72,9 @@
                     <p class="mb-8 lg:mb-12 w-[92%] lg:w-4/6 mx-auto lg:text-lg font-inter">
                         Yes, you can run unit tests and view the results directly within the app. The
                         integrated testing features allow for a streamlined .</p>
-                    <button class="btn btn-primary mb-12 lg:mb-28 font-rale font-bold lg:text-lg text-black 
+                    <a href="#ticketSection"  class="btn btn-primary mb-12 lg:mb-28 font-rale font-bold lg:text-lg text-black 
                     bg-lime-green border-2 border-lime-green hover:border-lime-green hover:bg-light-lime 
-                    hover:text-lime-green">Buy Tickets</button>
+                    hover:text-lime-green">Buy Tickets</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
         </div>
 
         <!-- ticket section -->
-        <div class="ticket-section bg-[#F7F8F8] rounded-t-[100px] py-10 lg:py-20 mt-16 
+        <div id="ticketSection" class="ticket-section bg-[#F7F8F8] rounded-t-[100px] py-10 lg:py-20 mt-16 
         border-t-2 border-lime-green">
             <div class="ticket-heading">
                 <h1 class="font-rale font-bold text-3xl lg:text-4xl text-center pb-4 lg:pb-8">P.H Paribahan</h1>
@@ -141,7 +141,7 @@
                         </div>
                         <div class="seats flex flex-row gap-3 bg-light-lime text-lime-green rounded-lg p-2 lg:p-3">
                             <img src="images/seat-green.png" alt="">
-                            <h3 class="font-inter font-medium lg:text-lg">40 Seats left</h3>
+                            <h3 class="font-inter font-medium lg:text-lg"><span id="seat-avail">40</span> Seats left</h3>
                         </div>
                     </div>
                     <div class="route-desc bg-[#F7F8F8] p-7 mt-8 mx-3 lg:mx-0 rounded-lg">
@@ -207,40 +207,39 @@
                         <div class="seat-row">
                             <div class="rows flex flex-row gap-4 items-center pt-4">
                                 <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A2</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">B</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">B1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">B2</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">C</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">C1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">C2</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">D</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">D1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">D2</button>
                             </div>
                         </div>
                         <!-- col 2 -->
                         <div class="seat-row">
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A1</button>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
@@ -248,7 +247,6 @@
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A1</button>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
@@ -256,7 +254,6 @@
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A1</button>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
@@ -264,7 +261,6 @@
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">A1</button>
                                 <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
@@ -286,31 +282,13 @@
                                     <!-- head -->
                                     <thead>
                                         <tr class="font-medium text-base text-black">
-                                            <th>Seat <div class="badge badge-accent">1</div>
+                                            <th>Seat <div id="seatBooked" class="badge badge-accent">0</div>
                                             </th>
                                             <th>Class</th>
                                             <th>Price</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <!-- row 1 -->
-                                        <tr class="font-normal text-base text-[#03071299]">
-                                            <td>C1</td>
-                                            <td>Economoy</td>
-                                            <td>550</td>
-                                        </tr>
-                                        <!-- row 2 -->
-                                        <tr class="hover font-normal text-base text-[#03071299]">
-                                            <td>D1</td>
-                                            <td>Economoy</td>
-                                            <td>550</td>
-                                        </tr>
-                                        <!-- row 3 -->
-                                        <tr class="font-normal text-base text-[#03071299]">
-                                            <td>B2</td>
-                                            <td>Economoy</td>
-                                            <td>550</td>
-                                        </tr>
+                                    <tbody id="seat-table">
                                     </tbody>
                                 </table>
                             </div>
@@ -318,17 +296,17 @@
                         <!-- total price -->
                         <div class="total-price flex flex-row justify-between pt-5">
                             <h4 class="font-medium text-base">Total Price</h4>
-                            <p class="font-medium text-base">BDT 1100</p>
+                            <p class="font-medium text-base">BDT <span id="total-price">0</span></p>
                         </div>
                         <!-- coupon input -->
-                        <div class="coupon-section relative">
-                            <input class="px-4 py-5 mt-4 rounded-lg w-full" type="text" placeholder="Have any coupon?">
-                            <button class="btn bg-lime-green text-white mt-4 px-5 absolute top-2 right-3">Apply</button>
+                        <div id="coupon-form" class="coupon-section relative">
+                            <input id="coupon" class="px-4 py-5 mt-4 rounded-lg w-full" type="text" placeholder="Have any coupon?">
+                            <button onclick="couponPrice()" class="btn bg-lime-green text-white mt-4 px-5 absolute top-2 right-3">Apply</button>
                         </div>
                         <!-- grand total price -->
                         <div class="grand-price flex flex-row justify-between pt-5">
                             <h4 class="font-medium text-base">Grand Total</h4>
-                            <p class="font-medium text-base">BDT 1100</p>
+                            <p class="font-medium text-base">BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
                     <!-- passenger info form -->
