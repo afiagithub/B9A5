@@ -5,3 +5,12 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+
+hr{
+    border-top: 1px dashed #03071233;
+    padding-top: 10px;
+}
+
+footer hr{
+    border-top: 1px dashed white;
+}
