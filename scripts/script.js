@@ -56,19 +56,48 @@ function couponPrice(){
     let grandPrice = document.getElementById("grand-total").innerText;
 
     let form = document.getElementById("coupon-form");
-    let grandTotal = parseInt(grandPrice);
-    // console.log(couponCode);
+    let rowsCount = document.getElementById('seat-table').childElementCount;
 
-    if(couponCode === 'NEW15'){
-        grandTotal = grandTotal - (grandTotal * 0.15);
-        form.classList.add("hidden");
-    }
-    else if(couponCode === 'Couple 20'){
-        grandTotal = grandTotal - (grandTotal * 0.20);
-        form.classList.add("hidden");
+    if(rowsCount < 4){
+        alert("You need to buy 4 tickets to apply a coupon");        
     }
     else{
-        alert("Not a valid Coupon code");
-    }    
-    setText('grand-total', grandTotal);
+        if(couponCode === 'NEW15'){
+            grandPrice = grandPrice - (grandPrice * 0.15);
+            form.classList.add("hidden");
+        }
+        else if(couponCode === 'Couple 20'){
+            grandPrice = grandPrice - (grandPrice * 0.20);
+            form.classList.add("hidden");
+        }
+        else{
+            alert("Not a valid Coupon code");
+        }        
+    }   
+    setText('grand-total', grandPrice);
+}
+
+function formValidate(){
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+
+    let rowsCount = document.getElementById('seat-table').childElementCount;
+
+    if(rowsCount > 0 && name !== "" && phone !== ""){
+        let successModal = document.getElementById("modal");
+        successModal.classList.remove("hidden");
+
+        hideSection("header");
+        hideSection("coupons");
+        hideSection("ticketSection");
+        hideSection("footer");
+    }
+    else{
+        alert("Please ensure that you have booked at least one ticket and also provide the passenger name and phone number")
+    }
+}
+
+function hideSection(id){
+    let section = document.getElementById(id);
+    section.classList.add("hidden");
 }

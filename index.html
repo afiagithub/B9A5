@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header id="header" class="">
         <!-- navigation bar section -->
         <div class="navbar font-rale px-5 lg:px-20 py-7">
             <div class="navbar-start">
@@ -70,9 +70,9 @@
                         End-to-End Travel with <br> <span class="text-lime-green">P Paribahan</span>
                     </h1>
                     <p class="mb-8 lg:mb-12 w-[92%] lg:w-4/6 mx-auto lg:text-lg font-inter">
-                        Yes, you can run unit tests and view the results directly within the app. The
-                        integrated testing features allow for a streamlined .</p>
-                    <a href="#ticketSection"  class="btn btn-primary mb-12 lg:mb-28 font-rale font-bold lg:text-lg text-black 
+                        Your Destination, One Click Away. Seamless Travel Starts Here. Connecting Passengers, One Ticket
+                        at a Time</p>
+                    <a href="#ticketSection" class="btn btn-primary mb-12 lg:mb-28 font-rale font-bold lg:text-lg text-black 
                     bg-lime-green border-2 border-lime-green hover:border-lime-green hover:bg-light-lime 
                     hover:text-lime-green">Buy Tickets</a>
                 </div>
@@ -82,7 +82,7 @@
 
     <main>
         <!-- coupon section -->
-        <div class="coupon-section py-6 lg:py-16 px-5 lg:px-20 text-center">
+        <div id="coupons" class="coupon-section py-6 lg:py-16 px-5 lg:px-20 text-center">
             <h1 class="font-rale font-bold text-4xl text-center pb-8 lg:pb-14">Best offers for you</h1>
 
             <div class="coupon-content flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between text-left">
@@ -124,8 +124,8 @@
             <div class="ticket-heading">
                 <h1 class="font-rale font-bold text-3xl lg:text-4xl text-center pb-4 lg:pb-8">P.H Paribahan</h1>
                 <p class="mb-8 lg:mb-12 w-[92%] lg:w-1/2 mx-auto text-base lg:text-lg font-inter text-center">
-                    Yes, you can run unit tests and view the results directly within the app. The
-                    integrated testing features allow for a streamlined .</p>
+                    Your Destination, One Click Away. Seamless Travel Starts Here. Connecting Passengers, One Ticket
+                        at a Time</p>
             </div>
             <div class="ticket-des bg-white mx-5 lg:mx-20 rounded-lg flex flex-col lg:flex-row 
             justify-evenly items-center gap-4 lg:gap-0">
@@ -141,7 +141,8 @@
                         </div>
                         <div class="seats flex flex-row gap-3 bg-light-lime text-lime-green rounded-lg p-2 lg:p-3">
                             <img src="images/seat-green.png" alt="">
-                            <h3 class="font-inter font-medium lg:text-lg"><span id="seat-avail">40</span> Seats left</h3>
+                            <h3 class="font-inter font-medium lg:text-lg"><span id="seat-avail">40</span> Seats left
+                            </h3>
                         </div>
                     </div>
                     <div class="route-desc bg-[#F7F8F8] p-7 mt-8 mx-3 lg:mx-0 rounded-lg">
@@ -181,7 +182,7 @@
             <!-- seat-deatils -->
             <div class="seat-booking bg-white mx-5 lg:mx-20 my-6 px-10 rounded-lg flex flex-col lg:flex-row 
             justify-around">
-                <div class="seat-section">
+                <div class="seat-section pb-8">
                     <h4 class="font-rale font-semibold text-2xl pt-5 pb-4">Select Your Seat</h4>
                     <hr>
                     <div class="seats-avail flex flex-row justify-between py-4">
@@ -236,35 +237,135 @@
                                 <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
                                 text-[#03071280] px-4 lg:px-8">D2</button>
                             </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">E</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">E1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">E2</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">F</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">F1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">F2</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">G</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">G1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">G2</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">H</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">H1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">H2</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">I</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">I1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">I2</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">J</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">J1</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">J2</button>
+                            </div>
                         </div>
                         <!-- col 2 -->
                         <div class="seat-row">
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">A</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">A3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">A4</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">B</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">B3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">B4</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">C</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">C3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">C4</button>
                             </div>
 
                             <div class="rows flex flex-row gap-4 items-center pt-4">
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A1</button>
-                                <button class="btn bg-[#0307120D] font-inter font-medium text-lg 
-                                text-[#03071280] px-4 lg:px-8">A2</button>
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">D</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">D3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">D4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">E</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">E3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">E4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">F</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">F3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">F4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">G</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">G3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">G4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">H</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">H3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">H4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">I</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">I3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">I4</button>
+                            </div>
+
+                            <div class="rows flex flex-row gap-4 items-center pt-4">
+                                <h5 class="font-inter font-medium text-lg text-[#03071280]">J</h5>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">J3</button>
+                                <button class="btn seat-btn bg-[#0307120D] font-inter font-medium text-lg 
+                                text-[#03071280] px-4 lg:px-8">J4</button>
                             </div>
                         </div>
                     </div>
@@ -300,8 +401,10 @@
                         </div>
                         <!-- coupon input -->
                         <div id="coupon-form" class="coupon-section relative">
-                            <input id="coupon" class="px-4 py-5 mt-4 rounded-lg w-full" type="text" placeholder="Have any coupon?">
-                            <button onclick="couponPrice()" class="btn bg-lime-green text-white mt-4 px-5 absolute top-2 right-3">Apply</button>
+                            <input id="coupon" class="px-4 py-5 mt-4 rounded-lg w-full" type="text"
+                                placeholder="Have any coupon?">
+                            <button onclick="couponPrice()"
+                                class="btn bg-lime-green text-white mt-4 px-5 absolute top-2 right-3">Apply</button>
                         </div>
                         <!-- grand total price -->
                         <div class="grand-price flex flex-row justify-between pt-5">
@@ -312,17 +415,18 @@
                     <!-- passenger info form -->
                     <div class="form-info font-inter">
                         <label class="font-semibold">Passenger Name*</label> <br>
-                        <input class="w-full p-4 my-3 border-2 rounded-lg" type="text" placeholder="Enter your name">
+                        <input id="name" class="w-full p-4 my-3 border-2 rounded-lg" type="text"
+                            placeholder="Enter your name">
 
                         <label class="font-semibold">Phone Number*</label> <br>
-                        <input class="w-full p-4 my-3 border-2 rounded-lg" type="tel"
+                        <input id="phone" class="w-full p-4 my-3 border-2 rounded-lg" type="tel"
                             placeholder="Enter your phone number">
 
                         <label class="font-semibold">Email ID</label> <br>
                         <input class="w-full p-4 my-3 border-2 rounded-lg" type="email"
                             placeholder="Enter your email id">
 
-                        <button class="btn bg-lime-green text-white w-full my-4">Next</button>
+                        <button onclick="formValidate()" class="btn bg-lime-green text-white w-full my-4">Next</button>
 
                         <div class="terms my-4 flex flex-row justify-between">
                             <a class="text-[#03071299] text-base underline">Terms and Conditions</a>
@@ -334,7 +438,7 @@
         </div>
 
         <!-- modal section -->
-        <div class="success-modal flex flex-col justify-center items-center text-center lg:w-3/5
+        <div id="modal" class="success-modal flex flex-col justify-center items-center text-center lg:w-3/5
          mx-auto mt-20 p-10 shadow-lg rounded-lg bg-[#27ae601a] hidden">
             <img class="w-30" src="images/success.png" alt="">
             <p class="font-roboto font-bold text-2xl text-[#27AE60] my-8 uppercase">Success</p>
@@ -346,7 +450,7 @@
         </div>
     </main>
 
-    <footer class="bg-[#030712] text-neutral-content px-7 lg:px-24 py-10 lg:py-20">
+    <footer id="footer" class="bg-[#030712] text-neutral-content px-7 lg:px-24 py-10 lg:py-20">
         <div class="footer-section flex flex-row justify-between pb-10">
             <div class="footer-heading">
                 <h1 class="font-rale font-extrabold text-3xl lg:text-4xl">P-Ticket</h1>
